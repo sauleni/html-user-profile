@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+</head>
+
+<body>
+    <main class="user-profile">
+        <div class="head">
+            <h3>My Profile</h3>
+        </div>
+
+        <span id="menuIcon">
+            <i class="fas fa-bars"></i>
+        </span>
+
+        <div class="userPreferences">
+            <div class="nav" id="menu">
+                <p class="section" id="profile">General</p>
+                <p class="section" id="details">Profile</p>
+                <p class="section" id="security">Security</p>
+                <p class="section" id="notifications">Notifications</p>
+                <p class="section" id="social">Social Media</p>
+            </div>
+
+            <div class="details" id="myProfile">
+                <div class="profile">
+                    <div class="main-content">
+                        <div class="personal">
+                            <p>User Full Name</p>
+                            <p>User Detail</p>
+                        </div>
+                        <div class="details">
+                            <p class="item">Music</p>
+                            <p class="item">Videos</p>
+                            <p class="item">Images</p>
+                        </div>
+
+                        <div class="icons">
+                            <p class="item">28</p>
+                            <p class="item">30</p>
+                            <p class="item">12</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="description">
+                    <h2>About User</h2>
+                    <p>ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid
+                        molestiae\nperspiciatis et ea
+                        nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae</p>
+                    <p>dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus
+                        cum\nquaerat
+                        magni
+                        maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae</p>
+                </div>
+            </div>
+
+            <div class="settings" id="myDetails">
+                <div class="about card">
+                    <img src="/images/userIcon.png" alt="">
+                    <p>User Name</p>
+                    <p>user@mbuva.co.za</p>
+
+                    <h2>About</h2>
+                    <p>User about info</p>
+                </div>
+
+                <form class="personal_address card">
+                    <h2>Personal Details</h2>
+                    <div class="name_email row">
+                        <div class="name inner">
+                            <label for="fullname" class="label">Full Name</label>
+                            <input type="text" name="fullname" id="" placeholder="Enter Your Full Name" />
+                        </div>
+
+                        <div class="email inner">
+                            <label for="email" class="label">Email</label>
+                            <input type="text" name="email" id="" placeholder="Enter Email Address" />
+                        </div>
+                    </div>
+
+                    <div class="phone_website row">
+                        <div class="phone inner">
+                            <label for="fullname" class="label">Phone Number</label>
+                            <input type="text" name="phone" id="" placeholder="Enter Phone Number">
+                        </div>
+
+                        <div class="website inner">
+                            <label for="website" class="label">Website</label>
+                            <input type="url" name="website" id="" placeholder="Enter Website URL" />
+                        </div>
+                    </div>
+
+                    <h2>Address</h2>
+                    <div class="street_city row">
+                        <div class="street inner">
+                            <label for="street" class="label">Street Name</label>
+                            <input type="text" name="street" id="" placeholder="Enter Street Name" />
+                        </div>
+
+                        <div class="city inner">
+                            <label for="city" class="label">City</label>
+                            <input type="text" name="city" id="" placeholder="Enter City" />
+                        </div>
+                    </div>
+
+                    <div class="state_zip row">
+                        <div class="state inner">
+                            <label for="state" class="label">State</label>
+                            <input type="text" name="state" id="" placeholder="Enter State" />
+                        </div>
+
+                        <div class="zip inner">
+                            <label for="zip" class="label">Zip</label>
+                            <input type="number" name="zip" id="" placeholder="Zip Code" />
+                        </div>
+                    </div>
+
+                    <div class="cancel_update">
+                        <button id="cancel">CANCEL</button>
+                        <button id="update">UPDATE</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="security" id="mySecurity">
+                <form action="">
+                    <label for="currentPassword">Current Password</label>
+                    <input type="password" name="currentPassword" id="currentPassword">
+
+                    <label for="newPassword">New Password</label>
+                    <input type="password" name="newPassword" id="newPassword">
+
+                    <label for="repeatNewPassword">Repeat New Password</label>
+                    <input type="password" name="repeatNewPassword" id="repeatNewPassword">
+                </form>
+            </div>
+
+            <div class="notifications" id="myNotifications">
+                <form action="" method="post">
+                    <legend>Recieve Notifications about:</legend>
+
+                    <div class="row">
+                        <input type="checkbox" name="recieveMusic" id="recieveMusic" />
+                        <label for="recieveMusic">Latest Music</label>
+                    </div>
+
+                    <div class="row">
+                        <input type="checkbox" name="recieveMovies" id="recieveMovies" />
+                        <label for="recieveMovies">Latest Movies</label>
+                    </div>
+
+                    <div class="row">
+                        <input type="checkbox" name="recieveMusicVideos" id="recieveMusicVideos" />
+                        <label for="recieveMusicVideos">Latest Music Videos</label>
+                    </div>
+
+                    <div class="row">
+                        <input type="checkbox" name="recieveSeries" id="recieveSeries" />
+                        <label for="recieveSeries">Latest Series</label>
+                    </div>
+                    {{!-- <div class="row"></div> --}}
+                </form>
+            </div>
+
+            <div class="social" id="mySocial">
+                <form action="" method="post">
+                    <legend>Social Media Links</legend>
+
+                    <div class="row">
+                        <label for="twitter">Twitter</label>
+                        <input type="url" name="twitter" id="twitter" placeholder="https://twitter.com/username" />
+                    </div>
+
+                    <div class="row">
+                        <label for="facebook">Facebook</label>
+                        <input type="url" name="facebook" id="facebook" placeholder="https://www.facebook.com/user" />
+                    </div>
+
+                    <div class="row">
+                        <label for="linkedin">LinkedIn</label>
+                        <input type="url" name="linkedin" id="linkedin"
+                            placeholder="https://www.linkedin.co.za/username" />
+                    </div>
+
+                    <div class="row">
+                        <label for="instagram">Instagram</label>
+                        <input type="url" name="instagram" id="instagram"
+                            placeholder="https://www.instagram.com/username" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
